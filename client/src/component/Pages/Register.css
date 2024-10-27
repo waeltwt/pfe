@@ -1,0 +1,56 @@
+/* Conteneur principal pour le formulaire */
+.aa {
+  display: flex; /* Utiliser flexbox pour aligner le contenu */
+  justify-content: center; /* Centre le formulaire horizontalement */
+  align-items: center; /* Centre le formulaire verticalement */
+  min-height: 100vh; /* Permet au conteneur d'occuper toute la hauteur de la fenêtre */
+  padding: 0px; /* Ajouter un peu de padding pour éviter que le formulaire ne touche le bord de la page */
+  background-image: url('./images/pexels-koprivakart-3972703.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la zone */
+  /* background-position: center; Centre l'image */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+/* Formulaire */
+.formm {
+  max-width: 700px; /* Limite la largeur maximale du formulaire */
+  width: 120%; /* Assure que le formulaire utilise toute la largeur disponible */
+  background-color: rgba(168, 192, 192, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(153, 222, 189, 0.1);
+  /* box-shadow: 0 0 20px rgba(197, 52, 149, 0.6); */
+  padding: 20px 30px;
+  color: rgb(228, 154, 96);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 20px; /* Ajoute un espacement pour ne pas toucher la barre de navigation */
+}
+
+/* Message d'erreur */
+.invalid-feedback {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+/* Champs du formulaire */
+.form-control {
+  min-height: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Bouton */
+.Button {
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 80%;
+  margin: 0 auto; /* Centre le bouton */
+}

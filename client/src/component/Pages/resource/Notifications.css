@@ -1,0 +1,5 @@
+.candidatures-table {
+    width: 80%; /* Ajustez la largeur du tableau selon vos besoins */
+    max-width: 800px; /* Optionnel : définir une largeur maximale */
+    margin: 0 auto; /* Centrer le tableau */
+  }

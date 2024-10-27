@@ -1,0 +1,76 @@
+.header {
+    top: 0;
+    left: 10px; /* Ajout d'unité */
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #cdffd8, #94b9ff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 100; */
+}
+
+li {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 90px; /* Ajustez la largeur ici */
+    /* height: 90px; */
+    /* Ajustez la hauteur ici */
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition pour un effet au hover */
+}
+
+.navbar a:hover {
+    color: #ffdf91; /* Change la couleur au survol */
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease; /* Adoucissement de la transition */
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Pour le bouton logout */
+.logout-btn {
+    background-color: transparent; /* Fond transparent pour se fondre dans la navbar */
+    border: none; /* Retirer les bordures */
+    color: #fff; /* Couleur blanche pour correspondre au texte des liens */
+    font-size: 18px; /* Taille similaire aux autres éléments de la navbar */
+    font-weight: 500;
+    cursor: pointer; /* Curseur pointeur pour indiquer l'interactivité */
+    margin-left: 40px; /* Même espacement que les autres éléments de la navbar */
+    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.logout-btn:hover {
+    color: #ffdf91; /* Change la couleur au survol pour correspondre aux autres liens */
+}
+.navbar .active {
+    font-weight: bold; /* Exemple de style pour l'élément actif */
+    color:  #ffdf91; /* Couleur de l'élément actif */
+  }
